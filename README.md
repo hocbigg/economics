@@ -1,43 +1,72 @@
-## Principles of Economics
+---
+title: Hocbigg - Economics
+description: Path to a free self-taught education in Economics.
+---
 
-This subject introduces the foundational concepts of both microeconomics (how individuals and firms make decisions, how markets work, and when they fail) and macroeconomics (economy-wide phenomena like GDP, inflation, unemployment, monetary and fiscal policy, and economic growth).
+## Introduction
 
-[Principles of Economics 3e (OpenStax)](https://openstax.org/details/books/principles-economics-3e) - a free, peer-reviewed textbook covering both micro and macro principles at the introductory level; well-suited as your primary structured text, especially if you prefer reading with practice problems.
+Economics is the study of scarcity, incentives, and coordination—how individuals, firms, and governments make decisions when resources are finite, and how those choices aggregate into societal outcomes. Studying economics provides a structured framework for understanding how prices allocate goods, why markets succeed or fail, what causes inflation and unemployment, and how policy interventions alter real-world behavior.
 
-[The Economy 2.0 (CORE Econ)](https://books.core-econ.org) - a free, open-access interactive textbook that takes a "real-world first" approach, starting from actual economic problems and data rather than abstract models; an excellent complement or alternative to OpenStax if you prefer a more empirical, policy-oriented introduction.
+This curriculum is designed for self-directed learners with no prior formal training in economics. You do not need university-level mathematics or calculus to complete these foundational subjects; comfort with basic high school algebra and graphical interpretation (reading coordinate axes, slopes, and curve shifts) is entirely sufficient. The focus here is on developing strong conceptual intuition, graphical literacy, and the empirical reasoning necessary to understand economic data.
 
-[14.01 Principles of Microeconomics (MIT OpenCourseWare)](https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023) - a complete university course with full video lectures by Prof. Jonathan Gruber, lecture notes, and problem sets; use this alongside either textbook above if you want the structure and rigor of an actual MIT course.
+### How to Navigate the Core
 
-[14.02 Principles of Macroeconomics (MIT OpenCourseWare)](https://ocw.mit.edu/courses/14-02-principles-of-macroeconomics-spring-2023) - the companion macro course with video lectures by Prof. Ricardo Caballero, covering output determination, unemployment, inflation, monetary and fiscal policy, and growth; naturally follows 14.01 if you are working through the MIT sequence.
+The curriculum is structured around three foundational pillars that form the universal prerequisite for all further study in the discipline:
 
-[Principles of Microeconomics (Marginal Revolution University)](https://learn.mru.org) - a free, video-based microeconomics course by economists Tyler Cowen and Alex Tabarrok, featuring short engaging lessons and interactive practice; a lighter, more visual alternative or supplement to the textbook and MIT lectures if you prefer learning through video.
+- **Principles of Microeconomics** should be your starting point. It introduces the discipline's essential grammar: opportunity cost, marginal decision-making, supply and demand, market equilibrium, firm behavior under differing competitive structures, and market failures like externalities and public goods.
+- **Principles of Macroeconomics** naturally follows microeconomics. Modern macroeconomic analysis explores aggregate phenomena—national output, business fluctuations, inflation, unemployment, monetary and fiscal policy, and long-run growth—using frameworks that rely directly on microeconomic foundations.
+- **Statistics and Empirical Methods for Economists** can be studied alongside microeconomics or immediately afterward. Modern economics is an intensely empirical field; this subject provides the quantitative grounding in probability, hypothesis testing, linear regression, and causal inference required to evaluate economic claims and interpret observational data critically.
 
-[Economics (Khan Academy)](https://www.khanacademy.org) - free introductory micro and macro courses with short videos and practice exercises; useful as a quick supplementary resource or for reviewing specific concepts you find difficult, though not detailed enough to substitute for a full textbook or course.
+Within each subject, multiple resource formats are provided, including open-access textbooks, recorded university lecture series, and modular video courses. You are not expected to work through every resource listed for a subject; instead, select the primary text or lecture series that best fits your study preferences, using the alternative options to reinforce difficult concepts or practice problem-solving.
 
-[Basic Economics (Thomas Sowell)](https://books.google.com/books?isbn=9780465056842) - a widely read narrative introduction written for readers with no prior background, focusing on incentives, prices, and how economic systems work; best used as an accessible first read or alongside a more structured textbook, not as a replacement for one.
+### Beyond the Core
 
-[Principles of Economics (N. Gregory Mankiw)](https://books.google.com/books?isbn=9780357038314) - the most widely used introductory economics textbook in universities; a solid paid option if you want the conventional textbook treatment and do not mind the cost, though the free resources above cover comparable ground.
+This curriculum covers only the essential core that every student in the discipline should master. Once you have completed these foundational subjects, you can explore specialized fields—such as industrial organization, central banking, development economics, and behavioral economics — in [Advanced Topics](advanced_topics.md). You can also apply your analytical and empirical skills through concrete deliverables in [Projects](projects.md).
 
-## Statistics for Economists
+## Curriculum
 
-This subject covers probability theory, sampling, estimation, hypothesis testing, and regression analysis — the statistical foundation you need to read and understand empirical economic research and to reason about economic data critically.
+### Principles of Microeconomics
 
-[Introductory Statistics 2e (OpenStax)](https://openstax.org/details/books/introductory-statistics-2e) - a free, comprehensive introductory statistics textbook covering descriptive statistics, probability distributions, confidence intervals, hypothesis testing, and correlation/regression; appropriate as your primary text if you want a full, structured treatment.
+This subject examines how individuals, households, and firms allocate scarce resources, how prices coordinate markets, and how market failures justify policy interventions.
 
-[14.30 Introduction to Statistical Methods in Economics (MIT OpenCourseWare)](https://ocw.mit.edu/courses/14-30-introduction-to-statistical-methods-in-economics-spring-2009) - a full MIT course with lecture notes and problem sets, focused specifically on the probability and statistics topics most relevant for economists; a good follow-up to the OpenStax text if you want the economics-specific angle.
+[Principles of Microeconomics 3e (OpenStax)](https://openstax.org/details/books/principles-microeconomics-3e) - Serves as your primary structured textbook, offering comprehensive coverage of supply, demand, elasticity, consumer choice, and market structures with extensive problem sets.
 
-[Statistics and Probability (Khan Academy)](https://www.khanacademy.org/math/statistics-probability) - free video lessons and practice exercises covering the full introductory statistics sequence; useful as a visual supplement or for reviewing specific concepts, though not a substitute for a structured textbook if you are serious about understanding the material.
+[The Economy 2.0: Microeconomics (CORE Econ)](https://books.core-econ.org) - An alternative open-access textbook that takes an empirical, problem-first approach, using real-world data and institutional analysis rather than starting exclusively from abstract equilibrium models.
 
-[Naked Statistics (Charles Wheelan)](https://books.google.com/books?isbn=9780393347777) - a popular narrative book that explains the intuition behind statistical concepts — inference, correlation, regression — using real-world examples; valuable as a first read to build intuition before tackling a formal textbook, or as an enjoyable parallel read, but not a replacement for one.
+[Principles of Microeconomics (N. Gregory Mankiw)](https://books.google.com/books?isbn=9780357133835) - A paid alternative to the free textbooks above, providing the standard exposition and diagrammatic style found across most university economics departments.
 
-## History of Economic Thought
+[14.01 Principles of Microeconomics (MIT OpenCourseWare)](https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023) - A complete university lecture course featuring recorded lectures by Prof. Jonathan Gruber, problem sets, and exams; best used alongside OpenStax or Mankiw if you want the structure and pace of an in-person college class.
 
-This subject surveys the major thinkers and schools of economic thinking — from Adam Smith through Marx, Keynes, and Friedman — providing the intellectual context that makes modern economic debates and assumptions intelligible.
+[Principles of Microeconomics (Marginal Revolution University)](https://mru.org/principles-economics-microeconomics) - A video-first alternative to the MIT lectures, using modular lessons and interactive questions to convey microeconomic intuition and applications.
 
-[The Worldly Philosophers (Robert L. Heilbroner)](https://books.google.com/books?isbn=9780684862149) - the classic narrative history of economic thought, covering the lives, times, and core ideas of the great economists from Smith to Schumpeter; still the best single-volume introduction, and genuinely readable rather than dry. I checked for a free full-text version of this book and did not find a legitimate open-access edition, so this is the one core subject where the primary resource is paid.
+[Microeconomics (Khan Academy)](https://www.khanacademy.org/economics-finance-domain/microeconomics) - A supplementary practice tool offering bite-sized video explanations and skill-check exercises to reinforce mechanical calculations and graphical shifts.
 
-## Game Theory
+### Principles of Macroeconomics
 
-This subject introduces the analysis of strategic interaction — situations where the best choice for one person depends on what others choose — covering concepts like Nash equilibrium, backward induction, and asymmetric information that now permeate all branches of modern economics.
+This subject investigates economy-wide performance, focusing on national income determination, economic growth, inflation, unemployment, and the influence of monetary and fiscal policy.
 
-[ECON 159: Game Theory (Yale Open Courses)](https://oyc.yale.edu/economics/econ-159) - a complete Yale course taught by Prof. Ben Polak, with full video lectures and transcripts; covers dominance, Nash equilibrium, sequential games, signaling, and auctions with in-class games and examples from economics, politics, and everyday life. This is the single best free structured introduction available.
+[Principles of Macroeconomics 3e (OpenStax)](https://openstax.org/details/books/principles-macroeconomics-3e) - The primary free textbook for the macroeconomics sequence, covering GDP measurement, the financial system, aggregate demand and aggregate supply, and international trade.
+
+[The Economy 2.0 (CORE Econ)](https://books.core-econ.org) - An alternative open-access textbook covering aggregate economic fluctuations, monetary policy, and unemployment through a modern macroeconomic framework rooted in historical data.
+
+[Principles of Macroeconomics (N. Gregory Mankiw)](https://books.google.com/books?isbn=9780357722961) - A commercial alternative to OpenStax, delivering the conventional aggregate models and policy debates standard in introductory university coursework.
+
+[14.02 Principles of Macroeconomics (MIT OpenCourseWare)](https://ocw.mit.edu/courses/14-02-principles-of-macroeconomics-spring-2023) - Sequentially follows introductory microeconomics, providing full video lectures by Prof. Ricardo Caballero and problem sets analyzing business cycles, financial crises, and growth theory.
+
+[Principles of Macroeconomics (Marginal Revolution University)](https://mru.org/principles-economics-macroeconomics-0) - An alternative video-driven course with concise lessons and practice drills covering GDP, the Solow growth model, business fluctuations, and central banking.
+
+[Macroeconomics (Khan Academy)](https://www.khanacademy.org/economics-finance-domain/macroeconomics) - A complementary practice resource featuring interactive problem sets and quick tutorials to build fluency with models such as the Keynesian cross, AD-AS, and the money multiplier.
+
+### Statistics and Empirical Methods for Economists
+
+This subject provides the quantitative foundation of economic inquiry, covering probability, hypothesis testing, linear regression, and the identification of causal relationships from observational data.
+
+[Introductory Statistics 2e (OpenStax)](https://openstax.org/details/books/introductory-statistics-2e) - Serves as the foundational reference textbook for quantitative methods, covering descriptive statistics, probability distributions, confidence intervals, and hypothesis testing.
+
+[Naked Statistics (Charles Wheelan)](https://books.google.com/books?isbn=9780393347777) - An accessible conceptual primer to read before or alongside OpenStax, demystifying statistical inference, correlation, and regression through intuitive real-world examples without dense mathematical proofs.
+
+[Statistics and Probability (Khan Academy)](https://www.khanacademy.org/math/statistics-probability) - A supplementary visual and practice companion to OpenStax, offering modular problem sets to build mechanical fluency with distributions, hypothesis tests, and standard errors.
+
+[Mastering Econometrics featuring Josh Angrist (Marginal Revolution University)](https://mru.org/mastering-econometrics-featuring-josh-angrist) - Extends standard statistics into economics, teaching the core empirical toolkit—including randomized trials, regression analysis, difference-in-differences, and instrumental variables—through video lessons led by Nobel laureate Josh Angrist.
+
+[Mastering 'Metrics: The Path from Cause to Effect (Joshua D. Angrist and Jörn-Steffen Pischke)](https://books.google.com/books?isbn=9780691152844) - The reading companion to the MRU econometrics course, providing an engaging, non-technical exploration of how economists use regression and natural experiments to isolate causal relationships in real-world data.
