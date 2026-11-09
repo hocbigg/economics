@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Economics Projects</title>
+  <meta name="description" content="Economics Projects curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/economics/projects.html">
+  <meta property="og:title" content="Economics Projects">
+  <meta property="og:description" content="Economics Projects curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/economics/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/economics/">Economics</a></li>
+      <li><a href="/economics/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/economics/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/economics" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="economics-projects">Economics Projects</h1>
+<blockquote>
+<p>"What I cannot create, I do not understand." — Richard Feynman</p>
+</blockquote>
+<ul>
+<li><a href="#build-your-own-economic-data-pipelines">Economic Data Pipelines</a></li>
+<li><a href="#build-your-own-interactive-economic-dashboards">Interactive Economic Dashboards</a></li>
+<li><a href="#conduct-your-own-replication-studies">Replication Studies</a></li>
+<li><a href="#write-your-own-empirical-research-papers">Empirical Research Papers</a></li>
+<li><a href="#write-your-own-policy-briefs">Policy Briefs</a></li>
+<li><a href="#conduct-your-own-cost-benefit-analyses">Cost-Benefit Analyses</a></li>
+</ul>
+<h2 id="build-your-own-economic-data-pipelines">Build your own economic data pipelines</h2>
+<ul>
+<li><a href="https://blogs.worldbank.org/en/opendata/exploring-international-debt-statistics-using-world-bank-api-python-and-r" target="_blank" rel="noopener noreferrer">Exploring International Debt Statistics Using the World Bank API in Python and R (World Bank)</a> - A step-by-step code walkthrough demonstrating how to programmatically query the World Bank API, clean indicator tables, and export cross-country debt statistics.</li>
+<li><a href="https://www.youtube.com/watch?v=R67XuYc9NQ4" target="_blank" rel="noopener noreferrer">Economic Data Analysis Project with Python Pandas (Rob Mulla)</a> - A complete video tutorial detailing how to fetch macroeconomic series using the FRED API, clean and merge time-series data, and structure indicators for analysis.</li>
+<li><a href="https://github.com/mortada/fredapi" target="_blank" rel="noopener noreferrer">fredapi: Python API for FRED (Federal Reserve Bank of St. Louis)</a> - A production-ready Python client with documentation and examples for pulling point-in-time vintage data from ALFRED and assembling tidy pandas dataframes.</li>
+<li><a href="https://github.com/worldbank/dime-r-training" target="_blank" rel="noopener noreferrer">DIME Analytics R Training (World Bank)</a> - A hands-on training repository from the World Bank Development Impact Evaluation group covering reproducible data cleaning, wrangling, and pipeline construction in R.</li>
+</ul>
+<h2 id="build-your-own-interactive-economic-dashboards">Build your own interactive economic dashboards</h2>
+<ul>
+<li><a href="https://mastering-shiny.org" target="_blank" rel="noopener noreferrer">Mastering Shiny (Hadley Wickham)</a> - The definitive web guide to developing reactive, interactive data dashboards and web applications using R.</li>
+<li><a href="https://docs.streamlit.io/get-started" target="_blank" rel="noopener noreferrer">Get Started with Streamlit (Streamlit Docs)</a> - Official tutorial on building and deploying data-driven web applications and filterable analytical dashboards in Python.</li>
+<li><a href="https://www.youtube.com/watch?v=R67XuYc9NQ4" target="_blank" rel="noopener noreferrer">Economic Data Analysis Project with Python Pandas (Rob Mulla)</a> - Video walkthrough building an interactive macroeconomic indicator dashboard with Plotly Express and pandas.</li>
+</ul>
+<h2 id="conduct-your-own-replication-studies">Conduct your own replication studies</h2>
+<ul>
+<li><a href="https://bitss.github.io/ACRE/" target="_blank" rel="noopener noreferrer">Guide for Accelerating Computational Reproducibility in the Social Sciences (BITSS / ACRe)</a> - A comprehensive handbook developed with the American Economic Association Data Editor outlining step-by-step protocols for assessing, reproducing, and conducting robustness checks on published economics papers.</li>
+<li><a href="https://worldbank.github.io/dime-data-handbook" target="_blank" rel="noopener noreferrer">Development Research in Practice: The DIME Analytics Data Handbook (World Bank)</a> - An open-source operational handbook detailing best practices for code structure, data provenance, and reproducible research workflows in empirical economics.</li>
+<li><a href="http://downloads.journalofeconomicsteaching.org/5/3/3-2.pdf" target="_blank" rel="noopener noreferrer">A Guide for Student-led Undergraduate Research in Empirical Microeconomics (Journal of Economics Teaching)</a> - A practical methodological guide walking through the "replicate and extend" model, where learners reproduce a published empirical paper and test novel variations.</li>
+</ul>
+<h2 id="write-your-own-empirical-research-papers">Write your own empirical research papers</h2>
+<ul>
+<li><a href="https://writingproject.fas.harvard.edu/files/hwp/files/writingeconomics.pdf" target="_blank" rel="noopener noreferrer">Writing Economics: A Guide for Harvard Economics Concentrators (Harvard Writing Project)</a> - A foundational guide explaining how economists structure empirical papers, formulate testable research hypotheses, document data limitations, and present regression findings.</li>
+<li><a href="https://docs.iza.org/dp15057.pdf" target="_blank" rel="noopener noreferrer">Writing Tips for Economics Research Papers (Plamen Nikolov / IZA)</a> - A detailed technical guide covering empirical paper architecture, model specification descriptions, table layouts, and identification arguments.</li>
+<li><a href="http://downloads.journalofeconomicsteaching.org/5/3/3-2.pdf" target="_blank" rel="noopener noreferrer">A Guide for Student-led Undergraduate Research in Empirical Microeconomics (Journal of Economics Teaching)</a> - Follows the lifecycle of an independent empirical paper from identifying data sources to drafting methodology and addressing referee feedback.</li>
+</ul>
+<h2 id="write-your-own-policy-briefs">Write your own policy briefs</h2>
+<ul>
+<li><a href="https://writingcenter.unc.edu/tips-and-tools/policy-briefs" target="_blank" rel="noopener noreferrer">Policy Briefs (UNC Writing Center)</a> - A foundational guide to the policy brief genre, detailing audience analysis, executive summary framing, and actionable policy recommendation structures.</li>
+<li><a href="https://idrc-crdi.ca/en/funding/resources-idrc-grantees/how-write-policy-brief" target="_blank" rel="noopener noreferrer">How to Write a Policy Brief (IDRC - International Development Research Centre)</a> - Practical instructions on translating complex empirical evidence into high-impact, two-page policy memos for non-specialist decision-makers.</li>
+<li><a href="https://www.capolicylab.org/wp-content/uploads/2023/05/Policy-Brief-Guide.pdf" target="_blank" rel="noopener noreferrer">Policy Briefs 101: A Guide for Translating Research Findings into Policy Impact (California Policy Lab)</a> - A practitioner manual developed for researchers with outlines, graphic design considerations, and editing timelines for policy translations.</li>
+</ul>
+<h2 id="conduct-your-own-cost-benefit-analyses">Conduct your own cost-benefit analyses</h2>
+<ul>
+<li><a href="https://www.whitehouse.gov/wp-content/uploads/2023/11/CircularA-94.pdf" target="_blank" rel="noopener noreferrer">OMB Circular No. A-94: Guidelines and Discount Rates for Benefit-Cost Analysis of Federal Programs (The White House)</a> - The official federal standard establishing analytical procedures, net present value calculations, discount rates, and shadow pricing for evaluating public programs.</li>
+<li><a href="https://www.gov.uk/government/publications/the-green-book-appraisal-and-evaluation-in-central-government/the-green-book-2020" target="_blank" rel="noopener noreferrer">The Green Book: Central Government Guidance on Appraisal and Evaluation (HM Treasury)</a> - The UK government’s benchmark handbook on social cost-benefit analysis, option generation, distributional impact assessment, and risk adjustment.</li>
+<li><a href="https://oia.pmc.gov.au/resources/guidance/cost-benefit-analysis" target="_blank" rel="noopener noreferrer">Cost-Benefit Analysis Guidance Note (Australian Government Office of Impact Analysis)</a> - A practical, step-by-step regulatory appraisal guide providing standard valuation techniques, sensitivity tests, and decision criteria.</li>
+<li><a href="https://www.bea.gov/resources/methodologies/RIMSII-user-guide" target="_blank" rel="noopener noreferrer">Regional Input-Output Modeling System (RIMS II) User's Guide (U.S. Bureau of Economic Analysis)</a> - Technical guidance detailing how regional input-output multipliers are applied to evaluate the indirect economic effects of investments and policy interventions.</li>
+</ul>
+    </article>
+  </main>
+
+</body>
+</html>

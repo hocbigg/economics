@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Hocbigg - Economics</title>
+  <meta name="description" content="Path to a free self-taught education in Economics.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/economics/">
+  <meta property="og:title" content="Hocbigg - Economics">
+  <meta property="og:description" content="Path to a free self-taught education in Economics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/economics/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/economics/">Economics</a></li>
+      <li><a href="/economics/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/economics/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/economics" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+<header class="page-header">
+  <img src="/images/logo.png" alt="Hocbigg logo">
+  <h1>Hocbigg - Economics</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Economics.</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-05">2026-10-05</time></small></p>
+</header>
+<h2 id="introduction">Introduction</h2>
+<p>Economics is the study of scarcity, incentives, and coordination—how individuals, firms, and governments make decisions when resources are finite, and how those choices aggregate into societal outcomes. Studying economics provides a structured framework for understanding how prices allocate goods, why markets succeed or fail, what causes inflation and unemployment, and how policy interventions alter real-world behavior.</p>
+<p>This curriculum is designed for self-directed learners with no prior formal training in economics. You do not need university-level mathematics or calculus to complete these foundational subjects; comfort with basic high school algebra and graphical interpretation (reading coordinate axes, slopes, and curve shifts) is entirely sufficient. The focus here is on developing strong conceptual intuition, graphical literacy, and the empirical reasoning necessary to understand economic data.</p>
+<h3 id="how-to-navigate-the-core">How to Navigate the Core</h3>
+<p>The curriculum is structured around three foundational pillars that form the universal prerequisite for all further study in the discipline:</p>
+<ul>
+<li><strong>Principles of Microeconomics</strong> should be your starting point. It introduces the discipline's essential grammar: opportunity cost, marginal decision-making, supply and demand, market equilibrium, firm behavior under differing competitive structures, and market failures like externalities and public goods.</li>
+<li><strong>Principles of Macroeconomics</strong> naturally follows microeconomics. Modern macroeconomic analysis explores aggregate phenomena—national output, business fluctuations, inflation, unemployment, monetary and fiscal policy, and long-run growth—using frameworks that rely directly on microeconomic foundations.</li>
+<li><strong>Statistics and Empirical Methods for Economists</strong> can be studied alongside microeconomics or immediately afterward. Modern economics is an intensely empirical field; this subject provides the quantitative grounding in probability, hypothesis testing, linear regression, and causal inference required to evaluate economic claims and interpret observational data critically.</li>
+</ul>
+<p>Within each subject, multiple resource formats are provided, including open-access textbooks, recorded university lecture series, and modular video courses. You are not expected to work through every resource listed for a subject; instead, select the primary text or lecture series that best fits your study preferences, using the alternative options to reinforce difficult concepts or practice problem-solving.</p>
+<h3 id="beyond-the-core">Beyond the Core</h3>
+<p>This curriculum covers only the essential core that every student in the discipline should master. Once you have completed these foundational subjects, you can explore specialized fields—such as industrial organization, central banking, development economics, and behavioral economics — in <a href="advanced_topics.html">Advanced Topics</a>. You can also apply your analytical and empirical skills through concrete deliverables in <a href="projects.html">Projects</a>.</p>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="principles-of-microeconomics">Principles of Microeconomics</h3>
+<p>This subject examines how individuals, households, and firms allocate scarce resources, how prices coordinate markets, and how market failures justify policy interventions.</p>
+<p><a href="https://openstax.org/details/books/principles-microeconomics-3e" target="_blank" rel="noopener noreferrer">Principles of Microeconomics 3e (OpenStax)</a> - Serves as your primary structured textbook, offering comprehensive coverage of supply, demand, elasticity, consumer choice, and market structures with extensive problem sets.</p>
+<p><a href="https://books.core-econ.org" target="_blank" rel="noopener noreferrer">The Economy 2.0: Microeconomics (CORE Econ)</a> - An alternative open-access textbook that takes an empirical, problem-first approach, using real-world data and institutional analysis rather than starting exclusively from abstract equilibrium models.</p>
+<p><a href="https://books.google.com/books?isbn=9780357133835" target="_blank" rel="noopener noreferrer">Principles of Microeconomics (N. Gregory Mankiw)</a> - A paid alternative to the free textbooks above, providing the standard exposition and diagrammatic style found across most university economics departments.</p>
+<p><a href="https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023" target="_blank" rel="noopener noreferrer">14.01 Principles of Microeconomics (MIT OpenCourseWare)</a> - A complete university lecture course featuring recorded lectures by Prof. Jonathan Gruber, problem sets, and exams; best used alongside OpenStax or Mankiw if you want the structure and pace of an in-person college class.</p>
+<p><a href="https://mru.org/principles-economics-microeconomics" target="_blank" rel="noopener noreferrer">Principles of Microeconomics (Marginal Revolution University)</a> - A video-first alternative to the MIT lectures, using modular lessons and interactive questions to convey microeconomic intuition and applications.</p>
+<p><a href="https://www.khanacademy.org/economics-finance-domain/microeconomics" target="_blank" rel="noopener noreferrer">Microeconomics (Khan Academy)</a> - A supplementary practice tool offering bite-sized video explanations and skill-check exercises to reinforce mechanical calculations and graphical shifts.</p>
+<h3 id="principles-of-macroeconomics">Principles of Macroeconomics</h3>
+<p>This subject investigates economy-wide performance, focusing on national income determination, economic growth, inflation, unemployment, and the influence of monetary and fiscal policy.</p>
+<p><a href="https://openstax.org/details/books/principles-macroeconomics-3e" target="_blank" rel="noopener noreferrer">Principles of Macroeconomics 3e (OpenStax)</a> - The primary free textbook for the macroeconomics sequence, covering GDP measurement, the financial system, aggregate demand and aggregate supply, and international trade.</p>
+<p><a href="https://books.core-econ.org" target="_blank" rel="noopener noreferrer">The Economy 2.0 (CORE Econ)</a> - An alternative open-access textbook covering aggregate economic fluctuations, monetary policy, and unemployment through a modern macroeconomic framework rooted in historical data.</p>
+<p><a href="https://books.google.com/books?isbn=9780357722961" target="_blank" rel="noopener noreferrer">Principles of Macroeconomics (N. Gregory Mankiw)</a> - A commercial alternative to OpenStax, delivering the conventional aggregate models and policy debates standard in introductory university coursework.</p>
+<p><a href="https://ocw.mit.edu/courses/14-02-principles-of-macroeconomics-spring-2023" target="_blank" rel="noopener noreferrer">14.02 Principles of Macroeconomics (MIT OpenCourseWare)</a> - Sequentially follows introductory microeconomics, providing full video lectures by Prof. Ricardo Caballero and problem sets analyzing business cycles, financial crises, and growth theory.</p>
+<p><a href="https://mru.org/principles-economics-macroeconomics-0" target="_blank" rel="noopener noreferrer">Principles of Macroeconomics (Marginal Revolution University)</a> - An alternative video-driven course with concise lessons and practice drills covering GDP, the Solow growth model, business fluctuations, and central banking.</p>
+<p><a href="https://www.khanacademy.org/economics-finance-domain/macroeconomics" target="_blank" rel="noopener noreferrer">Macroeconomics (Khan Academy)</a> - A complementary practice resource featuring interactive problem sets and quick tutorials to build fluency with models such as the Keynesian cross, AD-AS, and the money multiplier.</p>
+<h3 id="statistics-and-empirical-methods-for-economists">Statistics and Empirical Methods for Economists</h3>
+<p>This subject provides the quantitative foundation of economic inquiry, covering probability, hypothesis testing, linear regression, and the identification of causal relationships from observational data.</p>
+<p><a href="https://openstax.org/details/books/introductory-statistics-2e" target="_blank" rel="noopener noreferrer">Introductory Statistics 2e (OpenStax)</a> - Serves as the foundational reference textbook for quantitative methods, covering descriptive statistics, probability distributions, confidence intervals, and hypothesis testing.</p>
+<p><a href="https://books.google.com/books?isbn=9780393347777" target="_blank" rel="noopener noreferrer">Naked Statistics (Charles Wheelan)</a> - An accessible conceptual primer to read before or alongside OpenStax, demystifying statistical inference, correlation, and regression through intuitive real-world examples without dense mathematical proofs.</p>
+<p><a href="https://www.khanacademy.org/math/statistics-probability" target="_blank" rel="noopener noreferrer">Statistics and Probability (Khan Academy)</a> - A supplementary visual and practice companion to OpenStax, offering modular problem sets to build mechanical fluency with distributions, hypothesis tests, and standard errors.</p>
+<p><a href="https://mru.org/mastering-econometrics-featuring-josh-angrist" target="_blank" rel="noopener noreferrer">Mastering Econometrics featuring Josh Angrist (Marginal Revolution University)</a> - Extends standard statistics into economics, teaching the core empirical toolkit—including randomized trials, regression analysis, difference-in-differences, and instrumental variables—through video lessons led by Nobel laureate Josh Angrist.</p>
+<p><a href="https://books.google.com/books?isbn=9780691152844" target="_blank" rel="noopener noreferrer">Mastering 'Metrics: The Path from Cause to Effect (Joshua D. Angrist and Jörn-Steffen Pischke)</a> - The reading companion to the MRU econometrics course, providing an engaging, non-technical exploration of how economists use regression and natural experiments to isolate causal relationships in real-world data.</p>
+    </article>
+  </main>
+
+</body>
+</html>
